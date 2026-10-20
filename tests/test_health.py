@@ -9,7 +9,7 @@ def test_healthz_returns_ok() -> None:
     response = client.get("/healthz")
 
     assert response.status_code == 200
-    assert response.json() == {"status": "ok"}
+    assert response.json() == {"status": "OK"}
 
 
 def test_nothing_returns_404() -> None:
